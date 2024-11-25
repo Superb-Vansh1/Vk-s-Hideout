@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vk's Hideout</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌟</text></svg>">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(
+                45deg,
+                #ff6b6b,
+                #4ecdc4,
+                #45b7d1,
+                #96c3eb,
+                #7f7fd5,
+                #e786d7,
+                #ff6b6b
+            );
+            background-size: 300% 300%;
+            animation: gradientFlow 15s ease infinite;
+            color: white;
+            text-align: center;
+            cursor: none;
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: white;
+            color: #333;
+            transform: translateZ(50px) scale(1.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:active {
+            transform: translateZ(25px) scale(1.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition-duration: 0.2s;
+        }
+
+        .topic-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .cursor {
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            mix-blend-mode: difference;
+            z-index: 9999;
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover ~ .cursor {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Vk's Hideout</h1>
+        <p>Click Below To Redirect To Vk's Socials</p>
+
+        <div class="buttons-section">
+            <a href="https://discord.com" class="button" target="_blank">Discord</a>
+            <a href="https://youtube.com" class="button" target="_blank">YouTube</a>
+            <a href="https://instagram.com" class="button" target="_blank">Instagram</a>
+        </div>
+
+        <div class="topic-section">
+            <h2>Space</h2>
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-scaled.jpg" alt="Space">
+            <p>Journey through the cosmos and discover the mysteries of the universe</p>
+        </div>
+
+        <div class="topic-section">
+            <h2>Nature</h2>
+            <img src="https://news.yale.edu/sites/default/files/styles/featured_media/public/ynews-salty-oceans_1.png?itok=bOjaEkcu&c=a75e254fe1da31f2732f6b0d7bce1413" alt="Ocean">
+            <p>Dive into the fascinating world beneath the waves</p>
+        </div>
+
+        <div class="topic-section">
+            <h2>Travel</h2>
+            <img src="https://www.wildnatureimages.com/images/640/070620-014-The-Tetons.jpg" alt="Mountain">
+            <p>Scale the heights of Earth's most majestic peaks</p>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+</html>
