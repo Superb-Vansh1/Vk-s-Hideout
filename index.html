@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vk's Hideout</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌟</text></svg>">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Hideout</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,13 +18,17 @@
             font-family: 'Cormorant Garamond', serif;
             background: linear-gradient(
                 45deg,
-                #ff6b6b,
-                #4ecdc4,
-                #45b7d1,
-                #96c3eb,
-                #7f7fd5,
-                #e786d7,
-                #ff6b6b
+                #0a0a0a,    /* Almost black */
+                #1a1a2e,    /* Deep navy */
+                #16213e,    /* Dark blue */
+                #1b2d45,    /* Rich navy */
+                #242f40,    /* Midnight blue */
+                #1f2937,    /* Dark slate */
+                #1e293b,    /* Deep slate */
+                #0f172a,    /* Dark indigo */
+                #020617,    /* Deep space */
+                #0f0f0f,    /* Dark charcoal */
+                #0a0a0a     /* Back to almost black for smooth loop */
             );
             background-size: 300% 300%;
             animation: gradientFlow 15s ease infinite;
@@ -172,9 +172,25 @@
         .container {
             padding-top: 4rem;
         }
+
+        iframe {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
+    <iframe 
+        style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/7EAMXbLcL0qXmciM5SwMh2?utm_source=generator&theme=0&view=compact" 
+        width="250" 
+        height="80" 
+        frameBorder="0">
+    </iframe>
+
     <nav class="navbar">
         <h3 class="navbar-title">Hideout</h3>
     </nav>
